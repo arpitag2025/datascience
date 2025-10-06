@@ -1,9 +1,3 @@
-#!/usr/bin/env python3
-"""
-Midterm COVID Analysis — Infection vs Vaccination Speeds
-Author: <Your Name>
-Course: CS320/CS110 (Fall 2025)
-"""
 from typing import Dict, Optional, Tuple, cast
 import os
 import warnings
@@ -296,7 +290,8 @@ def compute_correlations(df: pd.DataFrame) -> Tuple[Tuple[float, float], Tuple[f
 def run_regression(df: pd.DataFrame):
     """
     Vaccination speed ~ Infection speed + GDP per capita + log(population)
-    Robust to missing GDP, drops remaining NaNs. Returns (model|None, r2|None, df_used).
+    Robust to missing GDP, drops remaining NaNs.
+    Returns (model|None, r2|None, df_used, feature_cols_used).
     """
     sub = df.copy()
     sub = sub.dropna(subset=["vaccination_speed_pm", "infection_speed_pm", "Population"])
@@ -325,7 +320,7 @@ def run_regression(df: pd.DataFrame):
         pass
 
     if len(model_df) < 10:
-        return None, None, model_df
+        return None, None, model_df, feature_cols
 
     X = model_df[feature_cols].to_numpy(dtype=float)
     y = model_df["vaccination_speed_pm"].to_numpy(dtype=float)
@@ -333,7 +328,7 @@ def run_regression(df: pd.DataFrame):
     model = LinearRegression()
     model.fit(X, y)
     r2 = model.score(X, y)
-    return model, r2, model_df
+    return model, r2, model_df, feature_cols
 
 # --------------------------------- Plotting -----------------------------------
 
@@ -396,7 +391,7 @@ def main():
 
     (pearson_r, pearson_p), (spearman_r, spearman_p) = compute_correlations(metrics)
 
-    model, r2, reg_df = run_regression(metrics)
+    model, r2, reg_df, feature_cols = run_regression(metrics)
 
     save_scatter(metrics, os.path.join(OUTPUT_DIR, "infection_vs_vaccination_scatter.png"))
     save_hist(metrics, "infection_speed_pm", os.path.join(OUTPUT_DIR, "infection_speed_hist.png"))
@@ -415,14 +410,12 @@ def main():
     else:
         print("Not enough paired data to compute correlations.")
     if model is not None:
-        coef_names = ["infection_speed_pm", "GDP_per_capita", "log_population"] \
-            if "GDP_per_capita" in reg_df.columns else ["infection_speed_pm", "log_population"]
         coefs = model.coef_
         intercept = model.intercept_
         print("-"*72)
-        print("Linear Regression: vaccination_speed_pm ~ " + " + ".join(coef_names))
+        print("Linear Regression: vaccination_speed_pm ~ " + " + ".join(feature_cols))
         print(f"R^2 = {r2:.3f}")
-        for name, val in zip(coef_names, coefs):
+        for name, val in zip(feature_cols, coefs):
             print(f"  Coef[{name}] = {val:.6f}")
         print(f"  Intercept = {intercept:.6f}")
     else:
@@ -441,3 +434,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
