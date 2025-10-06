@@ -1,0 +1,191 @@
+Country,missing_infection_speed,missing_vaccination_speed,missing_gdp,missing_pop
+Afghanistan,False,False,True,False
+Albania,True,False,True,False
+Algeria,False,False,True,False
+Andorra,True,False,True,False
+Angola,True,False,True,False
+Antigua and Barbuda,True,False,True,False
+Argentina,False,False,True,False
+Armenia,False,False,True,False
+Aruba,True,False,True,False
+Australia,True,False,True,False
+Austria,False,False,True,False
+Azerbaijan,False,False,True,False
+Bahamas,True,False,True,False
+Bahrain,False,False,True,False
+Bangladesh,False,False,True,False
+Barbados,True,False,True,False
+Belarus,False,False,True,False
+Belgium,False,False,True,False
+Belize,True,False,True,False
+Benin,True,False,True,False
+Bermuda,True,False,True,False
+Bhutan,True,False,True,False
+Bolivia,False,False,True,False
+Bosnia and Herzegovina,True,False,True,False
+Botswana,True,False,True,False
+Brazil,False,False,True,False
+Brunei,True,False,True,False
+Bulgaria,True,False,True,False
+Burkina Faso,True,False,True,False
+Burundi,True,False,True,False
+Cabo Verde,True,True,True,False
+Cambodia,True,False,True,False
+Cameroon,False,False,True,False
+Canada,False,False,True,False
+Cayman Islands,True,False,True,False
+Chad,True,False,True,False
+Chile,False,False,True,False
+Colombia,False,False,True,False
+Comoros,True,False,True,False
+Congo,True,False,True,False
+Costa Rica,True,False,True,False
+Croatia,True,False,True,False
+Cuba,True,False,True,False
+Cyprus,True,False,True,False
+Czech Republic,False,False,True,False
+Denmark,False,False,True,False
+Djibouti,True,False,True,False
+Dominica,True,False,True,False
+Dominican Republic,False,False,True,False
+Ecuador,False,False,True,False
+Egypt,False,False,True,False
+El Salvador,True,False,True,False
+Equatorial Guinea,True,False,True,False
+Eritrea,True,True,True,False
+Estonia,True,False,True,False
+Ethiopia,True,False,True,False
+Faeroe Islands,True,False,True,False
+Falkland Islands,True,True,True,False
+Fiji,True,False,True,False
+Finland,True,False,True,False
+France,False,False,True,False
+French Polynesia,True,False,True,False
+Gabon,True,False,True,False
+Gambia,True,False,True,False
+Georgia,True,False,True,False
+Germany,False,False,True,False
+Ghana,False,False,True,False
+Gibraltar,True,False,True,False
+Greece,True,False,True,False
+Greenland,True,False,True,False
+Grenada,True,False,True,False
+Guatemala,False,False,True,False
+Guinea,True,False,True,False
+Guinea-Bissau,True,False,True,False
+Guyana,True,False,True,False
+Haiti,True,False,True,False
+Honduras,False,False,True,False
+Hong Kong,True,False,True,False
+Hungary,True,False,True,False
+Iceland,True,False,True,False
+India,False,False,True,False
+Indonesia,False,False,True,False
+Iran,False,False,True,False
+Iraq,False,False,True,False
+Ireland,False,False,True,False
+Isle of Man,True,False,True,False
+Israel,False,False,True,False
+Italy,False,False,True,False
+Jamaica,True,False,True,False
+Japan,False,False,True,False
+Jordan,True,False,True,False
+Kazakhstan,False,False,True,False
+Kenya,True,False,True,False
+Kuwait,False,False,True,False
+Kyrgyzstan,True,False,True,False
+Laos,True,False,True,False
+Latvia,True,False,True,False
+Lebanon,True,False,True,False
+Lesotho,True,False,True,False
+Liberia,True,False,True,False
+Libya,True,False,True,False
+Liechtenstein,True,False,True,False
+Lithuania,True,False,True,False
+Luxembourg,True,False,True,False
+Macao,True,False,True,False
+Madagascar,True,False,True,False
+Malawi,True,False,True,False
+Malaysia,True,False,True,False
+Maldives,True,False,True,False
+Mali,True,False,True,False
+Malta,True,False,True,False
+Mauritania,True,False,True,False
+Mauritius,True,False,True,False
+Mexico,False,False,True,False
+Moldova,False,False,True,False
+Monaco,True,False,True,False
+Mongolia,True,False,True,False
+Montenegro,True,False,True,False
+Montserrat,True,True,True,False
+Morocco,False,False,True,False
+Mozambique,True,False,True,False
+Myanmar,True,False,True,False
+Namibia,True,False,True,False
+Nepal,False,False,True,False
+Netherlands,False,False,True,False
+New Caledonia,True,False,True,False
+New Zealand,True,False,True,False
+Nicaragua,True,False,True,False
+Niger,True,False,True,False
+Nigeria,False,False,True,False
+North Macedonia,True,False,True,False
+Norway,True,False,True,False
+Oman,False,False,True,False
+Pakistan,False,False,True,False
+Palestine,True,False,True,False
+Panama,False,False,True,False
+Papua New Guinea,True,False,True,False
+Paraguay,True,False,True,False
+Peru,False,False,True,False
+Philippines,False,False,True,False
+Poland,False,False,True,False
+Portugal,False,False,True,False
+Qatar,False,False,True,False
+Romania,False,False,True,False
+Russia,False,False,True,False
+Rwanda,True,False,True,False
+Saint Kitts and Nevis,True,False,True,False
+Saint Lucia,True,False,True,False
+San Marino,True,False,True,False
+Sao Tome and Principe,True,False,True,False
+Saudi Arabia,False,False,True,False
+Senegal,True,False,True,False
+Serbia,False,False,True,False
+Seychelles,True,False,True,False
+Sierra Leone,True,False,True,False
+Singapore,False,False,True,False
+Slovakia,True,False,True,False
+Slovenia,True,False,True,False
+Somalia,True,False,True,False
+South Africa,False,False,True,False
+South Sudan,True,False,True,False
+Spain,False,False,True,False
+Sri Lanka,True,False,True,False
+Sudan,True,False,True,False
+Suriname,True,False,True,False
+Swaziland,True,False,True,False
+Sweden,False,False,True,False
+Switzerland,False,False,True,False
+Syria,True,False,True,False
+Taiwan,True,False,True,False
+Tajikistan,True,False,True,False
+Tanzania,True,False,True,False
+Thailand,True,False,True,False
+Timor-Leste,True,True,True,False
+Togo,True,False,True,False
+Trinidad and Tobago,True,False,True,False
+Tunisia,True,False,True,False
+Turkey,False,False,True,False
+Uganda,True,False,True,False
+Ukraine,False,False,True,False
+United Kingdom,False,False,True,False
+United States,False,False,True,False
+Uruguay,True,False,True,False
+Uzbekistan,False,False,True,False
+Venezuela,True,False,True,False
+Vietnam,True,False,True,False
+Western Sahara,True,True,True,False
+Yemen,True,False,True,False
+Zambia,True,False,True,False
+Zimbabwe,True,False,True,False
